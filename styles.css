@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    font-size: 100px;
+    text-shadow: 2px;
+}
+p{
+    font-size: 35px;
+}
+.cont{
+    background-color: aqua;
+}
+.flags{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding-bottom: 10%;
+}
+.flag{
+    width: 17rem;
+    height: 12rem;
+    /* background-color: greenyellow; */
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+.flag::before{
+    content: "";
+    position: absolute;
+    background-color: #ff9933;
+    height: 33.3%;
+    width: 100%;
+    top: 0;
+}
+.flag::after{
+    content: "";
+    position: absolute;
+    background-color: #009648;
+    height: 33.3%;
+    width: 100%;
+    bottom: 0;
+}
+.ashoka{
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Ashoka_Chakra.svg/1200px-Ashoka_Chakra.svg.png);
+    height: 4rem;
+    position: relative;
+    animation: circle 5s linear infinite;
+}
+ @keyframes circle{
+    0%{
+        transform: rotate(0 deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
